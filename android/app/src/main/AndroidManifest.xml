@@ -31,7 +31,7 @@
                 <category android:name="android.intent.category.DEFAULT"/>
                 <category android:name="android.intent.category.BROWSABLE"/>
                 <data android:scheme="https" />
-                <data android:host="snapchat.com/add/avadhk.sapariya"/>
+                <data android:host="instagram.com/avadhk.sapariya"/>
             </intent-filter>
         </activity>
         <!-- Don't delete the meta-data below.

@@ -25,32 +25,21 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Surprise!"),
         ),
-        body: const SafeArea(
+        body: SafeArea(
           child: Padding(
-            padding: EdgeInsets.all(20.0),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: [
-                Text(
-                  'Click a button visible over bottom right corner',
-                  style: TextStyle(fontSize: 20),
-                ),
-                Text(
-                  'Add me on snap! 👻',
+            padding: const EdgeInsets.all(20.0),
+            child: Center(
+              child: TextButton(
+                onPressed: () {
+                  openUrl("https://www.instagram.com/avadhk.sapariya");
+                },
+                style: TextButton.styleFrom(foregroundColor: Colors.blue),
+                child: const Text(
+                  'Open Url',
                   style: TextStyle(fontSize: 12),
                 ),
-              ],
+              ),
             ),
-          ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          foregroundColor: Colors.yellow,
-          onPressed: () {
-            openUrl("https://www.snapchat.com/add/avadhk.sapariya");
-          },
-          child: const Icon(
-            Icons.snapchat,
           ),
         ),
       ),
