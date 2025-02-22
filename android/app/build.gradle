@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.deeplink_demo"
+    namespace = "com.apexavadh.deeplink_demo"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
